@@ -20,10 +20,9 @@ feature 'When a user visits a vending machine show page' do
     visit machine_path(dons)
 
     expect(page).to have_content("Don's Mixed Drinks Vending Machine")
+    expect(page).to have_content("Snacks")
     expect(page).to have_content("White Castle Burger: $3.50")
     expect(page).to have_content("Pop Rocks: $1.50")
     expect(page).to have_content("Flaming Hot Cheetos: $2.50")
-
-
   end
 end
